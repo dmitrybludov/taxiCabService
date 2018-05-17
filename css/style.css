@@ -1,0 +1,995 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* =====================================css_reset_end===================== */
+/* =====================================general=========================== */
+
+@font-face {
+    font-family: 'bebas_neuebold';
+    src: url('../Fonts/BabasNeue/bebasneue_bold-webfont.eot');
+    src: url('../Fonts/BabasNeue/bebasneue_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/BabasNeue/bebasneue_bold-webfont.woff2') format('woff2'),
+         url('../Fonts/BabasNeue/bebasneue_bold-webfont.woff') format('woff'),
+         url('../Fonts/BabasNeue/bebasneue_bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('../Fonts/Lato/lato-regular-webfont.eot');
+    src: url('../Fonts/Lato/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/Lato/lato-regular-webfont.woff2') format('woff2'),
+         url('../Fonts/Lato/lato-regular-webfont.woff') format('woff'),
+         url('../Fonts/Lato/lato-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latosemibold';
+    src: url('../Fonts/Lato/lato-semibold-webfont.eot');
+    src: url('../Fonts/Lato/lato-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/Lato/lato-semibold-webfont.woff2') format('woff2'),
+         url('../Fonts/Lato/lato-semibold-webfont.woff') format('woff'),
+         url('../Fonts/Lato/lato-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latoblack';
+    src: url('../Fonts/Lato/lato-black-webfont.eot');
+    src: url('../Fonts/Lato/lato-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/Lato/lato-black-webfont.woff2') format('woff2'),
+         url('../Fonts/Lato/lato-black-webfont.woff') format('woff'),
+         url('../Fonts/Lato/lato-black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.6rem;
+	background: #fff;
+	font-family: 'latoblack';
+}
+
+a,span {
+	display: inline-block;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+form * {
+	outline: 0;
+}
+
+.fa:before {
+	font-family: FontAwesome;
+}
+
+/* =====================================general_end======================= */
+/* =====================================banner_start====================== */
+
+.banner {
+	background: url("../img/Banner_bg.jpg") no-repeat center / 100% 100%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/* =====================================header_start====================== */
+
+.header {
+	padding: 35px 0 0 0;
+	font-size: 1.7rem;
+	color: #fff;
+}
+
+.header nav img {
+	user-select: none;
+}
+
+.header .menu a:not(#vdfvdvdv) {
+	padding: 10px 20px;
+	color: inherit;
+	transition: all .3s linear;
+}
+
+.header .menu li {
+	margin: 0 0 0 10px;
+	border-radius:15px;
+}
+
+.header .menu li:hover {
+	background: gray;
+	transition: all .3s ease;
+}
+
+.header .menu li:first-child {
+	margin: initial;
+}
+
+.header .menu .nav-item.active {
+	background: #ffc61a;
+	border-radius: 15px;
+	color: #010101;
+}
+
+.header .fa.fa-bars {
+	color: #ffc61a;
+	font-size: 2rem;
+}
+
+/* =====================================header_end======================== */
+/* =====================================banner_content_start============== */
+
+.banner_content {
+	padding: 65px 0 0 0;
+}
+
+.banner_content .reserv_head {
+	color: #ffc61a;
+	font-size: 3.6rem;
+	margin: 0 0 15px 0;
+}
+
+.banner_content .call {
+	color: #fff;
+	font-size: 7.2rem;
+	margin: 0 0 25px 0;
+}
+
+.banner_content .website {
+	color: #fff;
+	font-size: 2rem;
+	letter-spacing: 15px;
+}
+
+.banner_content .top_car {
+	position: relative;
+	bottom: -100px;
+}
+
+/* =====================================banner_content_end================ */
+/* =====================================banner_end======================== */
+/* =====================================about_start======================= */
+
+.about {
+	background: #ffc61a;
+	padding: 140px 0 80px 0;
+	color: #000;
+}
+
+.about .about_subheading {
+	font-size: 3.5rem;
+	margin: 0 0 20px 0;
+}
+
+.about .trusted_services {
+	font-size: 4.6rem;
+	margin: 0 0 40px 0;
+}
+
+.about .about_paragraph {
+	font-size: 1.8rem;
+	margin: 0 0 60px 0;
+	font-family: 'latoregular';
+}
+
+.about .about_btn {
+	font-size: 2.95rem;
+	border-radius: 5px;
+	padding: 15px 30px;
+	background: #000;
+	color: #fff;
+	font-family: 'bebas_neuebold';
+	transition: all .3s ease;
+}
+
+.about .about_btn:hover {
+	box-shadow:
+    1px 1px #000,
+    2px 2px #000,
+    3px 3px #000,
+    4px 4px #000,
+    5px 5px #000,
+    6px 6px #000,
+    7px 7px #000;
+  	transform: translateX(-7px);
+}
+
+.about .form_wrap {
+	width: 425px;
+	height: 350px;
+	background: #171717;
+	padding: 20px 0 0 0;
+}
+
+.about .form_wrap .my_form {
+	background: #fff;
+	font-family: 'latosemibold';
+	width: 100%;
+	padding: 20px;
+	font-size: 2rem;
+}
+
+.about .form_wrap .form_head {
+	font-size: 3.4rem;
+	color: #fff;
+	padding: 0 0 0 35px;
+	margin: 0 0 20px 0;	
+	font-family: 'latoblack';
+}
+
+.about .form_head span {
+	color: #ffc61a;
+}
+
+.about .my_form input {
+	width: 45%;
+	border: none;
+	border-bottom: 3px solid #e4e4e4;
+	color: #000;
+	margin: 0 0 35px 0;
+}
+
+.about .my_form input:nth-child(7) {
+	width: 100%;
+	height: 30px;
+}
+
+.about .form_btn {
+	width: 100%;
+	height: 50px;
+	border-radius: 5px;
+	background: #000;
+	border: none;
+	color: #fff;
+	font-family: 'bebas_neuebold';
+	font-size: 3rem;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+
+.about .form_btn:hover {
+	background: #000;
+	color: #ffc61a;
+}
+
+.my_form input:nth-child(even)::-webkit-input-placeholder {
+	color: #000;
+	transition: all .4s ease;
+	font-family: 'latosemibold';
+}
+
+.my_form input:nth-child(odd)::-webkit-input-placeholder {
+	color: #4b4b4b;
+	transition: all .4s ease;
+	font-family: 'latosemibold';
+}
+
+.my_form input:nth-child(even)::-moz-placeholder {
+	color: #000;
+	transition: all .4s ease;
+	font-family: 'latosemibold';
+}
+
+.my_form input:nth-child(odd)::-moz-placeholder {
+	color: #4b4b4b;
+	transition: all .4s ease;
+	font-family: 'latosemibold';
+}
+
+.my_form input:nth-child(even):-moz-placeholder {
+	color: #000;
+	transition: all .4s ease;
+	font-family: 'latosemibold';
+}
+
+.my_form input:nth-child(odd):-moz-placeholder {
+	color: #4b4b4b;
+	transition: all .4s ease;
+	font-family: 'latosemibold';
+}
+
+.my_form input:nth-child(even):-ms-input-placeholder {
+	color: #000;
+	transition: all .4s ease;
+	font-family: 'latosemibold';
+}
+
+.my_form input:nth-child(odd):-ms-input-placeholder {
+	color: #4b4b4b;
+	transition: all .4s ease;
+	font-family: 'latosemibold';
+}
+
+.my_form :focus::-webkit-input-placeholder{
+    color: transparent;
+    text-indent: 100%;
+}
+.my_form :focus::-moz-placeholder{
+    color: transparent;
+    text-indent: 100%;
+}
+.my_form :focus:-moz-placeholder{
+    color: transparent;
+    text-indent: 100%;
+}
+.my_form :focus:-ms-input-placeholder{
+    color: transparent;
+    text-indent: 100%;
+}
+
+/* =====================================about_end========================= */
+/* =====================================tariffs_start===================== */
+
+.tariffs {
+	background: #fff;
+	padding: 60px 0 75px 0;
+	font-family: 'latoblack';
+}
+
+.my_custom_heading {
+	font-size: 4.4rem;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.my_custom_heading>span {
+	font-size: 3.5rem;
+	color: #ffc61a;
+}
+
+.tariffs .tariffs_head {
+	color: #000;
+	margin: 0 0 50px 0;
+}
+
+.tariffs .tariffs_card {
+	background: #f5f4f2;
+	background-clip: content-box;
+	padding-top: 85px;
+	transition: all .3s ease;
+}
+
+.tariffs .tariffs_card:hover {
+	background: #ffc61a;
+	background-clip: content-box;
+}
+
+.tariffs .tariffs_card:hover>.tariffs_card_subhead {
+	color: #131313;
+}
+
+.tariffs .tariffs_card:hover>.tariffs_card_yellow_btn {
+	background: #1b1b1b;
+	color: #fff;
+}
+
+.tariffs .tariffs_card:hover>.tariffs_card_yellow_btn:hover {
+	box-shadow:
+    1px 1px #000,
+    2px 2px #000,
+    3px 3px #000,
+    4px 4px #000,
+    5px 5px #000,
+    6px 6px #000,
+    7px 7px #000;
+  	transform: translateX(-7px);
+}
+
+.tariffs_card .tariffs_card_taxi {
+	margin-top: -85px;
+}
+
+.tariffs_card .tariffs_card_head {
+	font-size: 3rem;
+	color: #000;
+	margin: 25px 0;
+}
+.tariffs_card .tariffs_card_paragraph {
+	font-family: 'latoregular';
+	color: #101010;
+	font-size: 1.8rem;
+	width: 98%;
+	margin: 0 0 35px 0;	
+}
+
+.tariffs_card .tariffs_card_subhead {
+	font-size: 4.4rem;
+	color: #ffc61a;
+	margin: 0 0 35px 0;
+	padding: 15px 30px;
+	transition: all .3s ease;
+}
+
+.tariffs_card .tariffs_card_yellow_btn {
+	padding: 15px 30px;
+	background: #ffc61a;
+	color: #000;
+	font-size: 3rem;
+	font-family: 'bebas_neuebold';
+	border-radius: 5px;
+	margin: 0 0 25px 0;
+	transition: all .3s ease;
+}
+
+/* =====================================tariffs_end======================= */
+/* =====================================why_choose_us_start=============== */
+
+.why_choose_us {
+	padding: 75px 0;
+	background: url('../img/Why_choose_us_bg.jpg') no-repeat center / 100% 100%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.why_choose_us .why_choose_us_heading {
+	color: #fff;
+	padding: 0 0 100px 0;
+}
+
+.why_choose_us .advantages{
+	min-height: 280px;
+}
+
+.why_choose_us .advantages_wrap {
+	padding: 0 0 0 100px;
+	position: relative;
+	width: 455px;
+	display: block;
+}
+
+.why_choose_us .advantages_wrap::before {
+	width: 75px;
+	height: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ffc61a;
+	border-radius: 50%;
+	position: absolute;
+	top:0;
+	left:0;
+	font-size: 2.5rem;
+}
+
+.advantages_wrap .advantages_head {
+	color: #ffc61a;
+	font-size: 2.5rem;
+	font-family: 'latoblack';
+	margin: 0 0 20px 0;
+}
+
+.advantages_wrap .advantages_paragraph {
+	color: #fff;
+	font-size: 1.8rem;
+	font-family: 'latoregular';
+	text-align: justify
+}
+
+.why_choose_us .btn_wrap {
+padding: 80px 0 0 0;
+}
+
+.btn_wrap .why_choose_us_btn {
+	padding: 15px 35px;
+	background: #ffc61a;
+	color: #010101;
+	font-family: 'bebas_neuebold';
+	font-size: 3rem;
+	border-radius: 5px;
+	transition: all .3s ease;
+}
+
+.btn_wrap .why_choose_us_btn:hover {
+	box-shadow:
+    1px 1px #906c00,
+    2px 2px #906c00,
+    3px 3px #906c00,
+    4px 4px #906c00,
+    5px 5px #906c00,
+    6px 6px #906c00,
+    7px 7px #906c00;
+  	transform: translateX(-7px);
+}
+
+/* =====================================why_choose_us_end================= */
+/* =====================================download_app_start================ */
+
+.download_app {
+	padding: 65px 0 0 0;
+	background: #fff;
+}
+
+.download_app .download_head {
+	color: #000;
+	padding: 0 0 40px 0;
+}
+
+.download_app .download_subhead {
+	color: #000;
+	font-size: 2.5rem;
+	margin: 0 0 30px 0;
+	padding: 40px 0 0 0;
+}
+
+.download_app .download_paragraph {
+	color: #101010;
+	font-size: 1.8rem;
+	font-family: 'latoregular';
+	margin: 0 0 60px 0;
+}
+
+.download_app .download_btn {
+	transition: all .3s ease;
+	width: 95%;
+}
+
+.download_app ul:hover li {
+	opacity: .4;
+	filter: blur(2px);
+	transition: all .6s ease;
+}
+.download_app ul li:hover {
+	opacity: 1;
+	filter: blur(0px);
+}
+
+/* =====================================download_app_end================== */
+/* =====================================testimonials_start================ */
+
+.testimonials {
+	background: url('../img/Place your Image.jpg') no-repeat center / 100% 100%;
+	background-size: cover;
+	padding: 105px 0 55px 0;
+	background-attachment: fixed;
+}
+
+.testimonials .testimonials_head {
+	color: #fff;
+	padding: 0 0 105px 0;
+}
+
+.testimonialSlider .bubble {
+	position: relative;
+	height: 230px;
+	padding: 40px 30px 30px 50px;
+	background: #040707;
+	border-radius: 40px;
+}
+
+.testimonialSlider .bubble_left:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 25px 25px 0;
+	border-color: #040707 transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	bottom: -21px;
+	right: 100px;
+	transform: rotate(135deg);
+}
+
+.testimonialSlider .bubble_right:before {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 25px 25px 0;
+	border-color: #040707 transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	bottom: -21px;
+	left: 100px;
+	transform: rotate(-135deg);
+}
+
+.testimonialSlider .swpr_wrap {
+	padding: 0 0 50px 0;
+}
+
+.testimonialSlider .slider_paragraph {
+	color: #fff;
+	font-size: 1.8rem;
+	font-family: 'latoregular';
+}
+
+.testimonialSlider .slider_author {
+	color: #ffc61a;
+	font-size: 2.5rem;
+	position: relative;
+	padding: 0 0 20px 75px;
+	transition: all .3s ease;
+}
+
+.testimonialSlider .slider_author>span {
+	color: #fff;
+	font-size: 1.8rem;
+}
+
+.testimonialSlider .slider_author::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 60px;
+	background: url('../img/Layer 6.png') no-repeat 0 0 / 100%;
+}
+
+.testimonialSlider .slider_author:hover>span {
+	color: #ffc61a;
+}
+/* =====================================testimonials_end================== */
+/* =====================================call_to_action_start============== */
+
+.call_to_action {
+	background: #ffc61a;
+	padding: 70px 0 85px 0;
+	color: #000;
+}
+
+.call_to_action .call_to_action_head {
+	font-size: 3.5rem;
+	margin: 0 0 35px 0;
+}
+
+.call_to_action a[href^="tel:"] {
+	color: inherit;
+	font-size: 7.7rem;
+}
+
+/* =====================================call_to_action_end================ */
+/* =====================================footer_start====================== */
+
+.footer {
+	background: #020102;
+	padding: 80px 0 0 0;
+	color: #fff;
+	font-size: 2rem;
+	font-family: 'latoregular';
+}
+
+.footer .footer_head {
+	border-bottom: 8px solid #ffc61a;
+	padding: 0 0 45px 0;
+	font-size: 2.5rem;
+	margin: 0 0 45px 0;
+	font-family: 'latoblack';
+}
+
+.footer .footer_paragraph {
+	font-size: 1.8rem;
+	margin: 0 0 35px 0;
+}
+
+.footer .social-nav {
+	width: 140px;
+}
+
+.footer .social-nav a {
+	font-size: 2rem;
+	color: #ffc61a;
+	transition: all .1s ease;
+}
+
+.footer .social-nav a:hover {
+	transform: scale(1.3)
+}
+
+.footer .os_link {
+	color: #ffc61a;
+	position: relative;
+	line-height: 30px;
+	margin: 0 0 20px 0;
+	width: 180px;
+	transition: all .3s ease;
+	font-family: inherit;
+}
+
+.footer .os_link:hover {
+	text-decoration: underline;
+}
+
+.footer .os_link::before {
+	font-size: 3rem;
+	right: 0;
+    left: initial;
+    position: absolute;
+}
+
+.footer .contact_link {
+	font-size: 1.8rem;
+	position: relative;
+	padding: 0 0 0 50px;
+	margin: 0 0 25px 0;
+	color: inherit;
+	font-family: inherit;
+	display: flex;
+	flex-direction: column;
+	transition: all .3s ease;
+}
+
+.footer .contact_link::before {
+	width: 20px;
+	height: 20px;
+	font-size: 2rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.footer .contact_link:hover {
+	color: #ffc61a;
+}
+
+.footer .copyright {
+	font-size: 1.4rem;
+	font-family: 'latoregular';
+	padding: 75px 0 15px 0;
+}
+
+/* =====================================footer_end======================== */
+/* modal_map_start */
+
+.map {
+	display: flex;
+	height: 50vh;
+}
+
+.map>iframe {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.my_modal .modal-content {
+	 background: #f5f4f2;
+}
+
+.my_modal .modal-header button {
+	 color: #1b1b1b;
+	 font-size: 3rem;
+}
+
+/* modal_map_end */
+/* ===================================== @media ========================== */
+
+/*===== lg =====*/
+@media (max-width: 1199px) {
+	.why_choose_us .advantages_wrap {
+    	width: 420px;
+	}
+
+	.banner_content .top_car {
+	    bottom: -80px;
+	}
+}
+
+/*===== md =====*/
+@media (max-width: 991px) {
+	.banner_content .top_car {
+		bottom: -75px;
+	}
+
+	.tariffs_card .tariffs_card_taxi {
+    	margin-top: -50px;
+	}
+
+	.tariffs .tariffs_card {
+    	padding-top: 50px;
+	}
+
+	.why_choose_us .advantages_wrap {
+	    width: 550px;
+	}
+
+	.why_choose_us .advantages {
+    	min-height: 550px;
+	}
+
+	.why_choose_us .btn_wrap {
+    	padding: 50px 0 0 0;
+	}
+
+	.download_app .download_subhead {
+		padding: 20px 0 0 0;
+	}
+
+	.download_app .download_paragraph {
+	    margin: 0 0 30px 0;
+	}
+
+	.testimonials {
+    	padding: 60px 0 30px 0;
+	}
+
+	.testimonialSlider .bubble {
+	    padding: 25px 25px 25px 30px;
+	}
+
+	.testimonials .testimonials_head {
+    	padding: 0 0 60px 0;
+	}
+
+}
+/*===== sm =====*/
+@media (max-width: 767px) {
+	html {
+    	font-size: 9px;
+	}
+
+	.about .form_wrap {
+	    height: 100%;
+	}
+
+	.about .form_wrap {
+	   	margin: 0 auto;
+ 	    width: 100%;
+	}
+
+	.about .padding_form {
+		padding: 40px 0 0 0;
+	}
+
+	.tariffs_card .tariffs_card_taxi {
+    	margin-top: -80px;
+	}
+
+	.tariffs .tariffs_card {
+    	padding-top: 80px;
+	}
+
+	.tariffs .tariffs_card {
+    	margin: 0 0 40px 0;
+	}
+
+	.tariffs {
+	    padding: 60px 0 35px 0;
+	}
+
+	.download_app .download_subhead {
+    	padding: 0;
+	}
+
+	.testimonialSlider .bubble {
+	    height: 200px;
+	}
+
+	.call_to_action a[href^="tel:"] {
+	    font-size: 7rem;
+	}
+
+	.why_choose_us .btn_wrap {
+    	padding: 15px 0 0 0;
+	}
+
+}
+
+/*===== xs =====*/
+@media (max-width: 575px) {
+	.banner_content .website {
+	    letter-spacing: 0;
+	}
+
+	.banner_content .top_car {
+    	bottom: -40px;
+	}
+
+	.about {
+	    padding: 100px 0 80px 0;
+	}
+
+	.about .padding_form {
+	    margin: 0 auto;
+	}
+
+	.tariffs .tariffs_card {
+    	margin: 0 auto 40px auto;
+	}
+
+	.why_choose_us .advantages_wrap {
+	    padding: 0 0 0 80px;
+	}
+
+	.why_choose_us .advantages_wrap::before {
+		width: 60px;
+		height: 60px;
+	}
+
+	.why_choose_us .advantages {
+    	min-height: 600px;
+	}
+
+	.download_app .padding_block {
+		padding: 50px 0 0 0;
+	}
+
+	.testimonials .my_custom_heading {
+	    font-size: 4rem;
+	}
+
+	.testimonials .my_custom_heading>span {
+	    font-size: 3.1rem;
+	}
+
+	.footer .padding_block {
+		padding: 0 0 50px 0;
+		margin: 0 auto;
+	}
+
+	.about .my_form input {
+		width: 100%;
+	}
+
+	.about .form_wrap {
+	    width: 95%;
+	}
+}
